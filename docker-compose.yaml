@@ -1,0 +1,13 @@
+services:
+  
+  http:
+    image: myhttp:v1
+    container_name: myhttp_web2
+    ports:
+      - "8236:80"
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana_server1
+    ports:
+      - "3666:3000"
